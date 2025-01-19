@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/theme.css"/>
+         <link rel="stylesheet" href="styles/fiel.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Lilita+One&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/fieldWeek.css"/>
+		<title>Field Week</title>
+</head>
+<body>
+		
+		
+		 <header>
+    
+        <a href="field.html"><h2 id="kh" style="text-align: left;">
+    FIELD SERVICE<br> SCHEDULE
+  </h2></a>
+ 
+    <div class="overlay" id="lay"></div>
+  <button class="menu-button" onclick="toggleMenu()">
+            <span class="material-symbols-outlined menu">&#xe896</span>    
+  </button>  
+  <!-- Menu -->
+  <ul id="me_nu" class="mn">
+  		     <span class="iconName" id="nameIcon">AJIBODE</span>
+    <li class="dropdown">
+      <a href="javascript:void(0)" id="selectWeek">Select Week • Dec 1-7</a>
+       <ul>
+       		<li class="liT"><a href="#wkB" onclick = "closeMenus(); selectWeek.textContent= 'Select Week • Dec 1-7';">Dec 1-7</a></li>
+        <li class="liT"><a href="#wkB1" onclick = "closeMenus(); selectWeek.textContent= 'Select Week • Dec 8-14';">Dec 8-14</a></li>
+        <li class="liT"><a href="#wkB2" onclick = "closeMenus(); selectWeek.textContent= 'Select Week• Dec 15-21';">Dec 15-21</a></li>
+            </ul>
+    </li>
+       <li class="dropdown" onclick= resetSubmenus()  ><!--<a href="#">Menu 3</a>-->
+       		<a href="javascript:void(0)">Menu 3</a>
+       <ul>
+        <li class="liT" onclick = closeMenus()><a href="#wkB">Dec 1-7</a></li>
+        <li class="liT" onclick = closeMenus()><a href="#wkB1">Dec 8-14</a></li>
+        <li class="liT" onclick = closeMenus()><a href="#wkB2">Dec 15-21</a></li>
+      </ul>
+       		
+       </li>
+  </ul>
+
+     <a href="sea2.html">           
+  <button class="searchBt" id="searchBT">
+  <span class="material-symbols-outlined search">&#xe8b6</span>    
+  </button>
+  </a>
+   
+  <button class="theme" id="dark-mode-toggle"> 
+          <span class="material-symbols-outlined swTheme ">&#xf05e&#xf518</span>
+                   </button>
+</header>
+  
+  
+        <br>
+     <div class="headBox" id="hb">
+       
+       <nav>
+         <a href="field.html#hc1b5">
+           <button class="headNav" id="dy">
+             Day
+           		
+           </button>
+         </a>
+         
+        <a href="#">
+           <button class="headNav" id="we1">
+             <span class="hi1">Week</span>
+           </button>
+         </a>
+         
+        <a href="#">
+           <button class="headNav" id="mo">
+             Month
+           </button>
+         </a>
+       </nav>
+       
+     </div>
+     <br>
+  
+		
+	 <div class="home-container" id="hc">
+	 		
+	 		<div id="loading-screen" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 		
+	 		
+	 		<div class="weekBox" id="wkB">
+	 						<h1 id="weekdate" class="wkD">DECEMBER 1-7</h1>
+
+	 				<div class="boxF" id="boxF1">
+	 			 				<h2 id="dayDate" class="dayD">SUNDAY 1</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Ugochukwu Onyekwe</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b>Kingdom Hall</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul class="terriUl">
+  <a href="#"><li class="teTe">Solomon Okonkwo • Right</li></a>
+       		<!--<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>-->
+       </ul>
+     </p>
+	 				</div>
+	 				
+	 				<br>
+	 				
+	 				
+	 				
+	 						<div id="loading-screen1" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 			
+	 				
+	 				
+	 				
+	 					<div class="boxF" id="boxF2">
+	 				<h2 id="dayDate" class="dayD">WEDNESDAY 4</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Oise Alabi/Bro Blessing Mark</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Arowolo</li></li></a>
+<a href="#"><li class="teTe">Olayinwola</li></a>
+<a href="#"><li class="teTe">Akinyanju</li></a>
+       </ul>
+     </p>
+	 					</div>
+	 							
+	 				<br>
+	 		
+	 			<div id="loading-screen2" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 		
+	
+	 		
+	 		
+	 		
+	 					<div class="boxF" id="boxF3">
+	 							 				<h2 id="dayDate" class="dayD">SATURDAY 7</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Toyin Gabielesin</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> Magazin</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 35 Solomon Okonkwo</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Owutedo • Left & Right</li></a>
+<a href="#"><li class="teTe">Ajibode • Left & Right</li></a>
+        		<!--<a href="#"><li class="teTe">Agbonifo</li></a>-->
+       </ul>
+     </p>
+	 				 					</div>
+	 		
+	 				<span  id="boxNxt" class="material-symbols-outlined swTheme ">arrow_back_ios_new</span>
+
+
+	 		
+	 								<br><br><br>			<br><br><br>			<br><br><br>
+
+	 			 		</div>
+		
+       		 		<div id="loading-screen3" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+       	
+	 		<div class="weekBox" id="wkB1">
+	 						<h1 id="weekdate" class="wkD">DECEMBER 8-14</h1>
+
+	 				
+	 				
+	 				<div class="boxF">
+	 			 				<h2 id="dayDate" class="dayD">SUNDAY 8</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBoxA">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Taye Ekunode</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> Kingdom Hall</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul class="terriUl">
+  <a href="#"><li class="teTe">Solomon Okonkwo • Left</li></a>
+       		<!--<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>-->
+       </ul>
+     </p>
+	 				</div>
+	 				
+	 				
+	 				<br>
+	 				
+	 				 		<div id="loading-screen4" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				
+	 					<div class="boxF">
+	 				<h2 id="dayDate" class="dayD">WEDNESDAY 11</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Jeremiah Ofedili</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+<a href="#"><li class="teTe">Aminu Ajibode</li></a>
+       </ul>
+     </p>
+	 					</div>
+	 							
+	 				<br>
+	 				
+	 							<div id="loading-screen5" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				
+	 					<div class="boxF">
+	 							 				<h2 id="dayDate" class="dayD">SATURDAY 14</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Kayode Olakojo</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b>Magazine</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+ <a href="#"><li class="teTe">Latson Azeez</li></a>
+ <a href="#"><li class="teTe">Akanni Majiyagbe</li></a>
+ <a href="#"><li class="teTe">Muslim Avenue</li></a>
+ <a href="#"><li class="teTe">Biodun Ogundemuren</li></a>
+ <a href="#"><li class="teTe">Babatunde Okunuga</li></a>
+ <a href="#"><li class="teTe">Mamudu Braimoh</li></a>
+
+       </ul>
+     </p>
+	 				 					</div>
+	 								<br><br><br>			<br><br><br>			<br><br><br>
+
+	 			 		</div>
+									<div id="loading-screen6" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+						
+	 		<div class="weekBox" id="wkB2">
+	 						<h1 id="weekdate" class="wkD">DECEMBER 15-21</h1>
+
+	 				<div class="boxF">
+	 			 				<h2 id="dayDate" class="dayD">SUNDAY 15</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Samuel</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b>Kingdom Hall</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Oguntoye</li></a>
+<a href="#"><li class="teTe">Ayinde Gidado</li></a>
+<a href="#"><li class="teTe">Ayo Seriki • Left & Right</li></a>
+       </ul>
+     </p>
+	 				</div>
+	 				
+	 				
+	 				<br>
+	 				
+	 							<div id="loading-screen7" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				<div class="boxF">
+	 				<h2 id="dayDate" class="dayD">WEDNESDAY 18</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+	 					</div>
+	 							
+	 				<br>
+	 				
+	 							<div id="loading-screen8" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				
+	 					<div class="boxF">
+	 							 				<h2 id="dayDate" class="dayD">SATURDAY 21</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+	 				 					</div>
+	 								<br><br><br>			<br><br><br>			<br><br><br>
+
+	 			 		</div>
+						
+				
+								<div id="loading-screen9" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+						
+	 		<div class="weekBox" id="wkB3">
+	 						<h1 id="weekdate" class="wkD">DECEMBER 22-28</h1>
+
+	 				<div class="boxF">
+	 			 				<h2 id="dayDate" class="dayD">SUNDAY 22</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Samuel</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b>Kingdom Hall</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Oguntoye</li></a>
+<a href="#"><li class="teTe">Ayinde Gidado</li></a>
+<a href="#"><li class="teTe">Ayo Seriki • Left & Right</li></a>
+       </ul>
+     </p>
+	 				</div>
+	 				
+	 				<br>
+	 				<!--	 				
+	 				
+	 							<div id="loading-screen10" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				<div class="boxF">
+	 				<h2 id="dayDate" class="dayD">WEDNESDAY 25</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+	 					</div>
+	 							
+	 				<br>
+	 				
+	 							<div id="loading-screen11" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				
+	 					<div class="boxF">
+	 							 				<h2 id="dayDate" class="dayD">SATURDAY 28</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+	 				 					</div>-->
+	 								<br><br><br>			<br><br><br>			<br><br><br>
+
+	 			 		</div>
+						
+				
+		
+		
+		
+		
+		
+		
+		
+	 			
+		<!--			<div id="loading-screen12" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+						
+	 		<div class="weekBox" id="wkB4">
+	 						<h1 id="weekdate" class="wkD">DECEMBER 29-JANUARY4</h1>
+
+	 				<div class="boxF">
+	 			 				<h2 id="dayDate" class="dayD">SUNDAY 29</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Samuel</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b>Kingdom Hall</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Oguntoye</li></a>
+<a href="#"><li class="teTe">Ayinde Gidado</li></a>
+<a href="#"><li class="teTe">Ayo Seriki • Left & Right</li></a>
+       </ul>
+     </p>
+	 				</div>
+	 				
+	 				
+	 				<br>
+	 				
+	 							<div id="loading-screen13" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				<div class="boxF">
+	 				<h2 id="dayDate" class="dayD">WEDNESDAY 1</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+	 					</div>
+	 							
+	 				<br>
+	 				
+	 							<div id="loading-screen14" class="loadS">
+	 		 <div class="boxx" id="load"></div>
+	 		</div>
+	 				
+	 					<div class="boxF">
+	 							 				<h2 id="dayDate" class="dayD">SATURDAY 4</h2>
+	 				
+	 				   <div class="box3Cont" id="fieldBox1">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+	 				 					</div>
+	 								<br><br><br>			<br><br><br>			<br><br><br>
+
+	 			 		</div>-->
+						
+	 		
+	 		
+				
+				
+				
+				
+				</div>
+				
+				
+				  <nav>
+       <div class="bottom" id="btm">
+   
+  <a href="index.html">
+  <button class="weekday" id="wkay">
+    <span class="material-symbols-outlined wDay">      
+      &#xe8ed</span>   
+    <br>      
+    <strong id="way">Weekday</strong>
+  </button>
+</a>
+
+
+  <a href="weekend.html">
+    <button class="weekend" id="wken" style="border: 2px snow;">
+      <span class="material-symbols-outlined wEnd">
+        &#xe8ef</span>     
+      <br>
+      <strong id="wnd">Weekend</strong>
+    </button>
+     </a>
+  
+  <a href="events.html">
+    <button class="events" id="event" style="border: 2px snow;">
+      <span class="material-symbols-outlined ev">&#xe878</span>    
+      <br>
+      <strong id="eve">Events</strong>
+    </button>   
+  </a>
+</div>
+</nav>
+  
+				
+				
+				
+
+
+						
+       
+	   <script src="scripts/script.js"></script>
+   <script src="scripts/language.js"></script>
+  <script src="scripts/dark.js"></script>
+ 
+
+
+<script>
+
+// Get all loading screens and corresponding boxF elements
+const loadingScreens = document.querySelectorAll('.loadS');
+const boxFElements = document.querySelectorAll('.boxF');
+
+// Function to show the loading screen for all boxF elements
+function showLoadingScreens() {
+  loadingScreens.forEach((screen) => {
+    screen.style.display = 'flex';
+  });
+  boxFElements.forEach((box) => {
+    box.style.display = 'none';
+  });
+}
+
+// Function to hide the loading screen for all boxF elements
+function hideLoadingScreens() {
+  loadingScreens.forEach((screen) => {
+    screen.style.display = 'none';
+  });
+  boxFElements.forEach((box) => {
+    box.style.display = 'block';
+  });
+}
+
+// Show the loading screen when the page loads
+window.addEventListener('load', () => {
+  showLoadingScreens();
+
+  // Hide the loading screens after a delay (e.g., 2 seconds)
+  setTimeout(() => {
+    hideLoadingScreens();
+  }, 5000);
+});
+
+
+// Get the loading screen element
+/*const loadingScreen = document.getElementById('loading-screen');
+const loadingScreen1 = document.getElementById('loading-screen1');
+const loadingScreen2 = document.getElementById('loading-screen2');
+
+const boxF1 = document.querySelectorAll('.boxF');
+const boxF2= document.getElementById('boxF2');
+const boxF3= document.getElementById('boxF3');
+
+
+
+// Function to show the loading screen
+function showLoadingScreen() {
+  loadingScreen.style.display = 'flex';
+		loadingScreen1.style.display = 'flex';
+loadingScreen2.style.display = 'flex';
+
+		boxF1.style.display = 'none';
+		boxF2.style.display = 'none';
+		boxF3.style.display = 'none';
+		
+}
+
+// Function to hide the loading screen
+function hideLoadingScreen() {
+  loadingScreen.style.display = 'none';
+		loadingScreen1.style.display = 'none';
+loadingScreen2.style.display = 'none';
+
+		boxF1.style.display = 'block';
+		boxF2.style.display = 'block';
+		boxF3.style.display = 'block';
+}
+
+// Show the loading screen when the page loads
+// Ensure the loading screen is visible by default
+showLoadingScreen();
+
+// Run after the page finishes loading
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    hideLoadingScreen();
+  }, 15000); // Adjust the timeout as necessary
+});*/
+
+
+
+</script>
+
+
+
+
+          </body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/theme.css"/>
+         <link rel="stylesheet" href="styles/field.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Lilita+One&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/weekday.css"/>
+		<title>Field Service</title>
+</head>
+<body>
+  <header>
+    
+        <a href="field.html"><h2 id="kh" style="text-align: left;">
+    FIELD SERVICE<br> SCHEDULE
+  </h2></a>
+ 
+    <div class="overlay" id="lay"></div>
+  <button class="menu-button" onclick="toggleMenu()">
+            <span class="material-symbols-outlined menu">&#xe896</span>    
+  </button>  
+  
+  <!-- Menu -->
+  <ul id="me_nu" class="mn">
+         <span class="iconName" id="nameIcon">AJIBODE</span>
+     <li class="liT"><a href="#">Field Service Schedule </a></li>     
+    <li class="dropdown">
+      <a href="javascript:void(0)" id="selectDay">Select Day • Sun 1</a>
+      <ul>
+        <li class="liT"><a href="#hc1b1" onclick = "closeMenus(); selectDay.textContent= 'Select Day • Sun 1';">Sunday 1</a></li>
+        <li class="liT"><a href="#hc1b2" onclick = "closeMenus(); selectDay.textContent= 'Select Day • Wed 4';">Wednesday 4</a></li>
+        <li class="liT"><a href="#hc1b3" onclick = "closeMenus(); selectDay.textContent= 'Select Day • Sat 7';">Saturday 7</a></li>
+      </ul>
+    </li>
+       <li class="liT"><a href="#">Menu 3</a></li>
+  </ul>
+
+     <a href="sea2.html">           
+  <button class="searchBt" id="searchBT">
+  <span class="material-symbols-outlined search">&#xe8b6</span>    
+  </button>
+  </a>
+   
+  <button class="theme" id="dark-mode-toggle"> 
+          <span class="material-symbols-outlined swTheme ">&#xf05e&#xf518</span>
+                   </button>
+</header>
+  
+  
+        <br>
+     <div class="headBox" id="hb">
+       
+       <nav>
+         <a href="field.html">
+           <button class="headNav" id="dy">
+             Day
+           </button>
+         </a>
+         
+        <a href="fieldWeek.html">
+           <button class="headNav" id="we1">
+             <span class="hi1">Week</span>
+           </button>
+         </a>
+         
+        <a href="#">
+           <button class="headNav" id="mo">
+             Month
+           </button>
+         </a>
+       </nav>
+       
+     </div>
+     <br>
+  
+     <div class="home-container" id="hc">
+       
+       <div class="hc1b" id="hc1b1">
+     <h1 class="H" id="date1">SUNDAY 1st</h1>
+            <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Ugochukwu Onyekwe</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b>Kingdom Hall</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul class="terriUl">
+  <a href="#"><li class="teTe">Solomon Okonkwo • Right</li></a>
+       		<!--<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>-->
+       </ul>
+     </p>
+         
+       </div>
+     
+     
+       <div class="hc1b" id="hc1b2">
+          <h1 class="H" id="date1">WEDNESDAY 4</h1>
+           <div class="box2Cont" id="fieldBox">
+ <h1 class="H" id="cap">CAPTAIN: <b>Bro Oise Alabi/Bro Blessing Mark</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Arowolo</li></li></a>
+<a href="#"><li class="teTe">Olayinwola</li></a>
+<a href="#"><li class="teTe">Akinyanju</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+     
+      <div class="hc1b" id="hc1b3">
+          <h1 class="H" id="date1">SATURDAY 7</h1>
+           <div class="box2Cont" id="fieldBox">
+   <h1 class="H" id="cap">CAPTAIN: <b>Bro Toyin Gabielesin</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> Magazin</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 35 Solomon Okonkwo</h2>
+         </div>
+	 				
+	 			<h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+        <ul class="terriUl">
+  <a href="#"><li class="teTe">Owutedo • Left & Right</li></a>
+<a href="#"><li class="teTe">Ajibode • Left & Right</li></a>
+        		<!--<a href="#"><li class="teTe">Agbonifo</li></a>-->
+       </ul>
+     </p>
+       </div>
+       
+       
+       
+       <div class="hc1b" id="hc1b4">
+     <h1 class="H" id="date1">SUNDAY 8</h1>
+            <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+     <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+       <div class="hc1b" id="hc1b5">
+          <h1 class="H" id="date1">WEDNESDAY 11</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+     
+      <div class="hc1b" id="hc1b6">
+          <h1 class="H" id="date1">SATURDAY 14</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+       
+      
+       <div class="hc1b" id="hc1b7">
+     <h1 class="H" id="date1">SUNDAY 15</h1>
+            <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+     <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+       <!--
+       <div class="hc1b" id="hc1b2">
+          <h1 class="H" id="date1">WEDNESDAY 4</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+     
+      <div class="hc1b" id="hc1b3">
+          <h1 class="H" id="date1">SATURDAY 7</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+      
+       
+       
+       
+       
+       <div class="hc1b" id="hc1b1">
+     <h1 class="H" id="date1">SUNDAY 1st</h1>
+            <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+     <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+       <div class="hc1b" id="hc1b2">
+          <h1 class="H" id="date1">WEDNESDAY 4</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+     
+      <div class="hc1b" id="hc1b3">
+          <h1 class="H" id="date1">SATURDAY 7</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+       
+        
+  
+  <div class="hc1b" id="hc1b1">
+     <h1 class="H" id="date1">SUNDAY 1st</h1>
+            <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+     <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+       <div class="hc1b" id="hc1b2">
+          <h1 class="H" id="date1">WEDNESDAY 4</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+     
+      <div class="hc1b" id="hc1b3">
+          <h1 class="H" id="date1">SATURDAY 7</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+       
+  
+  
+  <div class="hc1b" id="hc1b1">
+     <h1 class="H" id="date1">SUNDAY 1st</h1>
+            <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+     <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+       <div class="hc1b" id="hc1b2">
+          <h1 class="H" id="date1">WEDNESDAY 4</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+     
+      <div class="hc1b" id="hc1b3">
+          <h1 class="H" id="date1">SATURDAY 7</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+       
+  
+  
+  
+  <div class="hc1b" id="hc1b1">
+     <h1 class="H" id="date1">SUNDAY 1st</h1>
+            <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN: <b>Bro Elvis Okosun</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b><br><b>—</b> 10 Solomon Durodola</h2>
+         </div>
+     <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+       <div class="hc1b" id="hc1b2">
+          <h1 class="H" id="date1">WEDNESDAY 4</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+     
+     
+     
+      <div class="hc1b" id="hc1b3">
+          <h1 class="H" id="date1">SATURDAY 7</h1>
+           <div class="box2Cont" id="fieldBox">
+     <h1 class="H" id="cap">CAPTAIN <br> <b>Bro Calvin Uzor/Bro Daniel Uzor</b></h1>
+     <h2 class="subH" id="ac"><b>ACTIVITY: </b> House to house</h2>
+     <h2 class="subH" id="mc"><b>MEETING CENTER: </b> <br><b>—</b>10 Solomon Durodola</h2>
+         </div>
+           <h2 class="subH" id="te"><b>TERRITORY</b></h2>
+     <p id="teT">
+       <ul>
+         <a href="#"><li class="teTe">Muslim Avenue</li></a>
+<a href="#"><li class="teTe">Agbo Akomolafe</li></a>
+<a href="#"><li class="teTe">Agbonifo</li></a>
+       </ul>
+     </p>
+       </div>
+       </div>
+  
+  -->
+  
+  
+  
+     
+     
+     
+   </div>
+
+  
+  
+  
+  
+   
+  <nav>
+       <div class="bottom" id="btm">
+   
+  <a href="index.html">
+  <button class="weekday" id="wkay">
+    <span class="material-symbols-outlined wDay">      
+      &#xe8ed</span>   
+    <br>      
+    <strong id="way">Weekday</strong>
+  </button>
+</a>
+
+
+  <a href="weekend.html">
+    <button class="weekend" id="wken" style="border: 2px snow;">
+      <span class="material-symbols-outlined wEnd">
+        &#xe8ef</span>     
+      <br>
+      <strong id="wnd">Weekend</strong>
+    </button>
+     </a>
+  
+  <a href="events.html">
+    <button class="events" id="event" style="border: 2px snow;">
+      <span class="material-symbols-outlined ev">&#xe878</span>    
+      <br>
+      <strong id="eve">Events</strong>
+    </button>   
+  </a>
+</div>
+</nav>
+  
+  
+  
+  
+  <script>
+  const container = document.getElementById('hc1');
+
+  // Add a slow scrolling effect
+  container.addEventListener('wheel', (event) => {
+    event.preventDefault(); // Prevent default scroll behavior
+    container.scrollBy({
+      left: event.deltaY > 0 ? 1 : -1, // Adjust scroll speed here
+      behavior: 'smooth' // Smooth scrolling effect
+    });
+  });
+</script>
+  
+  
+  
+  
+  
+  
+  
+   <script src="scripts/script.js"></script>
+   <script src="scripts/language.js"></script>
+  <script src="scripts/dark.js"></script>
+ 
+          </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/search2.css">
+    <link rel="stylesheet" href="styles/search2.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Lilita+One&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Search Page</title>
+  
+</head>
+<body>
+  
+  <form id="search-form" action="sss.html" method="get">
+    <input type="search" id="s" name="query" placeholder="Search..." autocomplete="off">
+    <button type="submit" id="sb">
+      <span class="material-symbols-outlined search2">search</span>    
+    </button>
+  </form>
+<p id="error-message" style="color: red; display: none;">Invalid search</p>
+  
+  <!-- Suggestions dropdown -->
+  <ul id="suggestions"></ul>
+
+  <script>
+    const allSuggestions = [
+      "Ajibode is located in 19, Olayinka Olugoke Street, Idimu, Lagos",
+      "Who is the coordinator of body of elders?",
+      "What is the website?",
+      "Where is Ajibode?",
+      "What circuit is Ajibode?",
+      "next week's meeting?",
+      "next two week's meeting?",
+      "next three week's meeting?",
+     "this week's meeting?",
+      "last week's meeting?",
+     "who will participate in this week meeting",
+      "who is the chaiman for this week's meeting?",
+      "who is the chaiman for next week's meeting?",
+      "who is the chaiman for next two week's meeting?",
+      "who is the chaiman for next three week's meeting?",
+      "who will participate in next week's meeting",
+      "who will participate in next two weeks meeting",
+     "who will participate in next week meeting"
+    ];
+
+    const searchInput = document.getElementById('s');
+    const suggestionsContainer = document.getElementById('suggestions');
+
+    // Manually decide which suggestions to show on page load
+    const initialSuggestions = [
+      "This week meeting?", 
+      "Next week meeting",
+      "Circuit 220" 
+    ];
+
+    // Show suggestions based on user input or initial load
+    function showSuggestions(input) {
+      const filteredSuggestions = allSuggestions.filter(suggestion =>
+        suggestion.toLowerCase().includes(input.toLowerCase())
+      );
+
+      suggestionsContainer.innerHTML = '';  // Clear previous suggestions
+
+      if (filteredSuggestions.length > 0) {
+        suggestionsContainer.style.display = 'block';
+        filteredSuggestions.forEach(suggestion => {
+          const li = document.createElement('li');
+          li.textContent = suggestion;
+          li.addEventListener('click', () => {
+            searchInput.value = suggestion;  // Populate input with clicked suggestion
+            suggestionsContainer.style.display = 'none';  // Hide suggestions
+            document.getElementById('search-form').submit();  // Trigger form submission
+          });
+          suggestionsContainer.appendChild(li);
+        });
+      } else {
+        suggestionsContainer.style.display = 'none';
+      }
+    }
+
+    searchInput.addEventListener('input', function () {
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm) {
+        showSuggestions(searchTerm);  // Show suggestions based on input
+      } else {
+        suggestionsContainer.style.display = 'none';  // Hide suggestions if input is empty
+      }
+    });
+
+    // Show a predefined set of suggestions on page load
+    window.addEventListener('load', () => {
+      // Display only the manually selected suggestions
+      suggestionsContainer.innerHTML = ''; // Clear suggestions
+      initialSuggestions.forEach(suggestion => {
+        const li = document.createElement('li');
+        li.textContent = suggestion;
+        li.addEventListener('click', () => {
+          searchInput.value = suggestion;  // Populate input with clicked suggestion
+          suggestionsContainer.style.display = 'none';  // Hide suggestions
+          document.getElementById('search-form').submit();  // Trigger form submission
+        });
+        suggestionsContainer.appendChild(li);
+      });
+      suggestionsContainer.style.display = 'block';  // Show suggestions
+    });
+
+    // Optionally focus the search field for mobile optimization
+    searchInput.addEventListener('click', function () {
+      searchInput.focus();
+    });
+  
+  document.getElementById('search-form').addEventListener('submit', function (event) {
+  const searchTerm = searchInput.value.trim();
+  const errorMessage = document.getElementById('error-message');
+
+  if (!searchTerm) {
+    event.preventDefault(); // Prevent form submission
+    errorMessage.style.display = 'block'; // Show error message
+  } else {
+    errorMessage.style.display = 'none'; // Hide error message if input is valid
+  }
+});
+  
+  
+  
+  
+  </script>
+</body>
+</html>

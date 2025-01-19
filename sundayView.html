@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css"/>
+      <link rel="stylesheet" href="styles/theme.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&family=Lilita+One&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+ 		<title>Day View</title>
+</head>
+<body>
+	  
+	  
+  <header>
+  <h2 id="kh">
+    WEEKENDS
+  </h2>
+  <button class="menu-button" onclick="toggleMenu()">
+            <span class="material-symbols-outlined menu">lists</span>    
+  </button>  
+  <!-- Menu -->
+  <ul id="me_nu" class="mn">
+    <li class="dropdown">
+      <a href="javascript:void(0)" id="selectSunday">Select Day</a>
+      <ul>
+        <li class="liT"><a href="index.html">Sunday 1st</a></li>
+        <li class="liT"><a href="#">Sunday 14th</a></li>
+        <li class="liT"><a href="#">Sunday 21st</a></li>
+      </ul>
+    </li>
+    <li class="liT"><a href="#">Week View</a></li>
+    <li class="liT"><a href="#">Month View</a></li>
+  </ul>
+
+                      
+       
+ 
+     <a href="sea1.html">           
+  <button class="searchBt" id="searchBT">
+  <span class="material-symbols-outlined search">search</span>    
+  </button>
+  </a>
+   
+  <button class="theme" id="dark-mode-toggle"> 
+          <span class="material-symbols-outlined swTheme ">dark_modelight_mode</span>
+                   </button>
+  </header>
+	  
+	  
+	  
+	   <div class="home-container" id="hc">
+   
+   
+   
+   
+   
+   
+ </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <nav>
+       <div class="bottom" id="btm">
+   
+  <a href="index.html">
+  <button class="weekday" id="wkay">
+    <span class="material-symbols-outlined wDay">      
+      view_day</span>   
+    <br>      
+    <strong id="way">Weekday</strong>
+  </button>
+</a>
+
+
+  <a href="weekend.html">
+    <button class="weekend" id="wken" style="border: 2px snow;">
+      <span class="material-symbols-outlined wEnd"
+        style="color: mediumpurple;">
+        view_week</span>     
+      <br>
+      <strong id="wnd">Weekend</strong>
+    </button>
+     </a>
+  
+  <a href="events.html">
+    <button class="events" id="event" style="border: 2px snow;">
+      <span class="material-symbols-outlined ev">event</span>    
+      <br>
+      <strong id="eve">Events</strong>
+    </button>   
+  </a>
+</div>
+</nav>
+  
+  
+  
+  <script src="scripts/script.js"></script>
+   <script src="scripts/language.js"></script>
+  <script src="scripts/dark.js"></script>
+
+	  
+	  
+</body>
+</html>
