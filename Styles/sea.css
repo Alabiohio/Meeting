@@ -1,0 +1,188 @@
+/* Style the container holding the search result */
+/*.result {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}*/
+
+.searchBt {
+  background-color: transparent;
+  position: fixed;
+  right: 3.5em;
+  border: none;
+  top: 17.5em;
+  border-radius: 30%;
+  font-size: 20%; 
+}
+
+span.search {
+  font-size: 11.5em;
+  color: coral;
+  font-variation-settings: 'OPSZ' 24;
+  background-color: burlywood;
+  border-radius: 0.2em;
+}
+span.search:hover {
+  color: mediumpurple;
+  gard: 100;
+  transform: scale(1.1); /* Slight zoom effect */
+
+}
+
+
+/* Style the links */
+.result a {
+  color: coral; /* Blue color for the links */
+  text-decoration: none; /* Remove the underline */
+  font-weight: bold; /* Make the text bold */
+  margin-top: -50%;
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s;
+  margin-left: 1%;
+    font-family: 'signika' , sans-serif;
+}
+
+/* On hover, change link color and add a slight scale effect */
+.result a:hover {
+  color: mediumorchid; /* Darker blue on hover */
+  }
+
+/* Optional: add a focus style for accessibility */
+/*.result a:focus {
+  outline: 2px solid #004a99; /* Focus outline in case the link is focused using keyboard */
+}*/
+
+/* Add margin between the text and link */
+.result p {
+  margin-bottom: 50px;
+}
+
+.result a:visited {
+  color: magenta;
+}
+
+
+
+body {
+  font-family: 'Signika', sans-serif;
+  text-align: left;
+  padding: 20px;
+  background-color:#fdf8f2;
+  color: #333;
+  height: 10vh;
+  position: relative;
+}
+#st {
+  background-color: antiquewhite;
+  width:88%;
+  border-radius: 10px;
+ position: relative;
+  top: 0em;
+ max-height: 10% auto;
+    font-family: 'signika' , sans-serif;
+}
+.dark-mode #st {
+  background-color: #666;
+}
+
+#search-term {
+  color: #e91e63;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 1em;
+  background-color: ;
+  border-radius: 8px;
+  text-align: left;
+    font-family: 'signika' , sans-serif;
+}
+
+.result {
+  /*margin: 20px auto;*/
+  /*padding: 15px;*/
+  margin-top: 15px;
+ max-width: 200vw;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  overflow-y: auto;
+    font-family: 'signika' , sans-serif;
+}
+.dark-mode .result {
+  background-color: #444;
+}
+
+.result p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
+    font-family: 'signika' , sans-serif;
+}
+
+.result img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result video {
+  max-width: 200px;
+  width: 40%;
+  margin: 15px 0;
+  margin-left: 1em;
+  border-radius: 8px;
+  height: 100px;
+  
+}
+
+.result audio {
+  margin: 15px 0;
+}
+
+#results {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color:#f7f0e6;
+  overflow-y: scroll;
+  max-height: 75vh;
+ width: 86vw;
+  text-align: justify;
+  position: relative;
+  left: -1.1em;
+  overflow-x: hidden;
+    font-family: 'signika' , sans-serif;
+}
+.dark-mode #results {
+  background-color: #333;
+}  
+
+
+hr {
+  border: none;
+  border-top: 2px solid #e91e63;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  #search-term {
+    font-size: 0.5em;
+      font-family: 'signika' , sans-serif;
+  }
+
+  .result {
+    width: 109%;
+    margin-left: -1em;
+      font-family: 'signika' , sans-serif;
+  }
+}

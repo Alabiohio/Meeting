@@ -1,0 +1,210 @@
+/*@media (min-width: 768px) {
+    .tr img {
+      height: 100px;
+      
+    }
+  }
+*/
+#sp {
+ color: transparent;
+}
+.isLoading {
+ height: 27vh;
+ align-content: center
+ 
+}
+.spinLoad {
+ color: coral
+}
+.tFGwBox {
+ /* margin-left: 50%;*/
+}
+
+#date {
+  margin-top: 2%;
+  font-size: 2em;
+  margin-left: 2%;
+  color: dimgrey;
+  font-family: 'signika' , sans-serif;
+}
+#verse {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: palevioletred;
+  margin-top: 1%;
+  margin-left: 2%;
+  font-family: 'signika' , sans-serif;
+}
+
+.sng {
+  font-size: 1.1em;
+ /* margin-left: 70%;*/
+  margin-top: -3em;
+  font-family: 'signika' , sans-serif;
+}
+.sng a {
+  text-decoration: none;
+  color: coral;
+  
+}
+.sng a:hover {
+  color: magenta;
+}
+span.mNote {
+  color: palevioletred;
+  font-size: 1.8em;
+  
+}
+#chMan {
+  font-size: 1.6em;
+  color: palevioletred;
+  font-weight: 900;
+  font-family: 'signika' , sans-serif;
+}
+h2 b {
+  color: #444;
+  font-size: 0.8em;
+  font-family: 'signika' , sans-serif;
+}
+span.hcIcons {
+  color: coral;
+  font-size: 1.6em;
+}
+.firstTalk {
+  font-weight: 800;
+  color: palevioletred;
+  font-size: 2em;
+  text-align: center;
+  margin-left: 0em;
+  font-family: 'signika' , sans-serif;
+}
+#box {
+  width: 100vw;
+  background-color: ghostwhite;
+ margin-left: 0.02%;
+  border-radius: 7px;
+}
+.tr {
+  font-size: 1.6em;
+  color: palevioletred;
+  font-weight: 700;
+  margin-top: 13%;
+  text-align: left;
+  font-family: 'signika' , sans-serif;
+  margin-left: 2%;
+}
+#tr3 b {
+  font-size: 1.3rem;
+}
+
+li b {
+  color: #000;
+  font-size: 0.9em;
+  font-family: 'signika' , sans-serif;
+  margin: 2%;
+}
+li em {
+  color: darkgrey; 
+  margin: 2%;
+}
+.tr img {
+  width: 95%;
+  margin-right: 2%;
+  
+}
+.tr a {
+  font-size: 0.8em;
+  padding: 1%;
+  width: 35%;
+  margin-top: -8%;
+  margin-left: 30%;
+  color: coral;
+  background-color: transparent;
+  
+}
+.tr a:hover {
+  color: magenta;
+}
+
+#box2 {
+  display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 97vw;
+    position: relative;
+    background-color: transparent;
+    overflow-y: hidden;/* stop scroll up*/
+/*height: 25vh;*/
+  font-size: 50%;
+  
+}
+.box2Cont {
+  overflow-x: hidden;
+  background-color: ghostwhite; 
+  height: 100%;
+  width: 78%;
+  color: black;
+  margin-left: 1%;
+  flex-shrink: 0;
+ /* font-size: 32%;*/
+  font-family: 'signika' , sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+margin-right: 1%;
+}
+.txt {
+  color: grey;
+  font-size: 2.5em;
+  margin: 2%;
+  
+}
+.txt em{
+  margin: 5%;
+}
+.txt b {
+  color: palevioletred;
+  margin: 4%;
+}
+.txt1 {
+  font-weight: 800;
+  font-size: 2em;
+  margin: 4%;
+}
+.txt1 b {
+  color: palevioletred;
+  font-size: 1.3em;
+  margin: 4%;
+}
+
+
+
+#box3 {
+  width: 96%;
+  background-color: ghostwhite;
+ /*height: 95vh;*/
+  border-radius: 7px;
+}
+b a:hover {
+  background-color: transparent;
+  color: magenta;
+  width: 3.1em;
+  height: 0.9em;
+}
+.clBox b {
+ color: #000;
+}
+#songNo3 {
+ font-size: 1.1rem;
+  padding: 1%;
+  width: 35%;
+  margin-top: -8%;
+  color: coral;
+  background-color: transparent;
+ text-decoration: none;
+}
+#songNo3:hover {
+ background-color: transparent;
+  color: magenta;
+  width: 3.1em;
+  height: 0.9em;
+}

@@ -1,0 +1,720 @@
+#themeStatus {
+ font-weight: 700;
+ margin-top: 50px;
+}
+.foot {
+ background-color: #444; 
+}
+body {
+ /* background-color: white;*/
+  position: fixed;
+  color: black;
+  height: 100vh;
+ width: 100vw;
+}
+
+#lood1 {
+    width: 55px;
+      height: 55px;
+    animation: rolll  2s linear reverse infinite ;
+    position: absolute;
+    top: 33%;
+    left: 21%;
+  
+    border-bottom-color:  #db7093;
+    border-top-color:  #db7093;
+    border-right-color: coral;
+    border-left-color: coral;
+  }
+  
+  @keyframes rolll {
+     0% {
+        transform: rotate(0deg) scale(1);
+      }
+      50% {
+        transform: rotate(180deg) scale(1.4);
+      }
+      100% {
+        transform: rotate(360deg) scale(1);
+      }}
+  
+  #lood {
+    animation: roll  2s linear infinite ;
+    
+  }
+  
+  
+  
+  .boxx {
+    width: 50px;
+      height: 50px;
+      margin: 50px;
+    border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      background-color: transparent;
+    border-bottom-color:  coral;
+    border-top-color: coral;
+    border-right-color: #db7093;
+    border-left-color: #db7093;
+      border-width: 1.5rem;
+    border-top-style: dotted;  
+   border-bottom-style:  solid;  
+    border-left-style: dotted;  
+    border-right-style: dotted;  
+    
+    display: flex;
+  }
+  @keyframes roll {
+     0% {
+        transform: rotate(0deg) scale(1);
+      }
+      50% {
+        transform: rotate(180deg) scale(1.4);
+      }
+      100% {
+        transform: rotate(360deg) scale(1);
+      }}
+  
+
+
+
+
+
+
+/* Style the loading screen to cover the entire page */
+.loadS{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;/*rgba(255, 255, 255, 0.8);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  z-index: 9999;
+  
+}
+
+.loadText {
+  position: absolute;
+  top: 65%;
+  font-size: 1rem;
+  font-weight: 800;
+  color: palevioletred;
+  
+  display: none;
+}
+.show {
+  display: block;
+  animation: fade 2.5s ease ;
+  animation-iteration-count: 1;
+}
+
+/* FOR FADE IN STYLES
+
+/*@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}*/
+.shakee {
+  display: block;
+  animation: shake 0.2s linear 3;
+}
+
+@keyframes shake {
+  from {
+    transform: translateX(10%);
+  }
+  to {
+    transform: translateX(20%);
+  }
+}
+
+
+
+
+
+/* .boxx {
+    width: 50px;
+      height: 50px;
+     /* margin-top: -5%;*/
+    /*border-radius: 50%;
+      background-color: transparent;
+    border-bottom-color:  green;
+    border-top-color: green;
+    border-right-color: transparent;
+    border-left-color: transparent;
+      border-width: 2px;
+    border-style: solid;
+    animation: roll  0.5s linear infinite ;
+    display: flex;
+   
+  }
+  @keyframes roll {
+     0% {
+        transform: rotate(0deg) scale(1);
+      }
+      50% {
+        transform: rotate(180deg) scale(1.5);
+      }
+      100% {
+        transform: rotate(360deg) scale(1.2);
+      }
+      }
+
+
+*/
+
+
+
+#kh {
+ color: palevioletred; 
+  text-align: center;
+  position: fixed;
+  margin-top: 2.5%;
+  left: 1.8em;
+  font-size: 1.7em;
+ /* font-style: oblique;*/
+  font-weight: 900;
+  font-family: 'lilita one' , cursive;
+}
+
+.searchBt {
+  background-color: transparent;
+  position: fixed;
+  right: 1em;
+  border: none;
+  top: 5px;
+  border-radius: 30%;
+  font-size: 20%; 
+}
+span.search:hover, span.menu:hover, span.swTheme:hover {
+  color: mediumpurple;
+  gard: 100;
+  transform: scale(1.2); /* Slight zoom effect */
+
+}
+
+
+.theme {
+  background-color: transparent;
+  position: fixed;
+  right: 15em;
+  border: none;
+  top: 5px;
+  border-radius: 30%;
+  font-size: 20%
+}
+  
+
+
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    color: coral;
+    font-size: 20%;
+    cursor: pointer;
+    position: fixed;
+    top:5px;
+    left:5px;
+z-index: 1000;
+}
+.menu-button {
+  transition: transform 1s ease;
+  
+}
+
+.menu-button.rotate {
+  transform: rotate(360deg);
+}
+
+
+
+span.search, span.menu, span.swTheme {
+  font-size: 11.5em;
+  color: black;
+  font-variation-settings: 'OPSZ' 24
+}
+.dark-mode span.menu, .dark-mode span.search, .dark-mode span.swTheme {
+  color: blanchedalmond;
+}
+.overlay {
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(64, 64, 64, 0.5);
+   display: none;
+  z-index: 400;
+}
+.dropdown {
+   z-index: 530;
+  
+}
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  border-radius: 10px;
+  
+    }
+.iconName {
+  margin-left: 30%;
+  margin-bottom: 5%;
+  position: absolute;
+  top: 1%;
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: 'lilita one' , cursive;
+  color: palevioletred;
+} 
+    li {
+      position: relative;
+      /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);*/
+      border: none;
+      top: 10%;
+    }
+    li a {
+      text-decoration: none;
+      display: block;
+      padding: 5%;
+      color: dimgray;
+      font-weight: 800;
+      width: 90%;
+     font-size: 1.5em;
+      font-family: 'signika' , sans-serif;
+     /* border-radius: 1%;*/
+      background-color: transparent;  
+      transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+border-radius: 10px;
+      z-index: 500;
+      
+    }
+.dark-mode li a {
+  color: darkslategray;
+}
+
+   li a:hover {
+      background-color: #ddd;
+     transform: scale(1.05); /* Slight zoom effect */
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Dropdown container */
+   /* .dropdown > ul {
+      /*display: none;  /* Submenu hidden by default */
+      /*padding-left: 15%;  /* Indentation for the submenu */
+     /* border-radius: 20em;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }*/
+.dropdown > ul > li {
+      margin: 1px 0; /* Add space between submenu items */
+  
+    }
+.dropdown.active > ul {
+      display: block;  /* Show submenu when parent has 'active' class */
+  animation: fadeIn 0.5s ease; /* Fade-in effect */
+
+    }
+
+    .dropdown:hover > a {
+      background-color: #ddd;  /* Highlight parent item on hover */
+      transform: scale(1.03); /* Highlight parent item on hover */
+    }
+/* Dropdown item hover effect */
+    .dropdown > ul > li a:hover {
+      background-color: #fbd5a7;
+      transform: translateX(5px); /* Slide effect */
+      box-shadow: none; /* Remove shadow on hover */
+      
+    }
+
+  /* Keyframes for fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    
+
+    /* Menu initially hidden */
+ /*   #me_nu {
+      display: none;
+      background-color: white;
+      z-index: 9999;
+      position: relative;
+      width: 85vw;
+      top: 2em;
+      left: 2%;
+      
+    }
+/* Disable all pointer events globally */
+.disable-interactions {
+    pointer-events: none; /* Block all interactions */
+}
+
+/* Allow scrolling and pointer events only for the container itself */
+.disable-interactions #hc {
+    pointer-events: auto;
+    overflow: auto; /* Allow scrolling */
+}
+
+/* Block interaction for buttons and links inside the container */
+.disable-interactions #hc * {
+    pointer-events: none;
+}
+
+
+
+/* Menu styles */
+#me_nu {
+    position: relative;
+    background-color: white;
+    z-index: 400;
+    width: 85vw;
+  height: 100vh;
+    margin-top: -2%;
+    left: -2%;
+    opacity: 0; /* Start as invisible */
+    transform: translateX(-50%); /* Start slightly above */
+    transition: opacity 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    pointer-events: none; /* Disable interaction when hidden */
+  
+}
+.dark-mode #me_nu {
+  background-color: #888;
+}
+
+/* Menu visible */
+#me_nu.active {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Back to its original position */
+    pointer-events: auto; /* Enable interaction */
+}
+
+/* Rotate menu button */
+.menu-button.rotate {
+    transform: rotate(360deg);
+    transition: transform 1s ease;
+}
+
+/* Submenu styles */
+.dropdown > ul {
+    max-height: 0; /* Collapsed by default */
+    overflow: hidden; /* Prevent content from spilling out */
+    transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s; /* Smooth collapse and hide */
+    visibility: hidden; /* Hide when not expanded */
+    opacity: 0; /* Invisible when collapsed */
+    background-color: blanchedalmond; /* Adjust background as needed */
+  padding-left: 15%;  /* Indentation for the submenu */
+
+}
+
+/* Submenu expanded */
+.dropdown > ul.expanded {
+    max-height: 500px; /* Adjust based on content height */
+    visibility: visible; /* Make it visible immediately */
+    opacity: 1; /* Fully opaque */
+    transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0s 0s; /* Ensure smooth expand */
+  background-color: linen;
+}
+.dark-mode .dropdown > ul.expanded {
+  background-color: darkgray;
+}
+
+/* Dropdown item hover */
+li a:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown item slide effect */
+.dropdown > ul > li a:hover {
+    transform: translateX(5px);
+    background-color: #fbd5a7;
+}
+
+/* Fade-in animation for dropdown */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(50%);
+    }
+}
+
+
+
+
+
+/* Basic styling for the dropdown button */
+.lang {
+  position: relative;
+  display: block;
+  padding: 2px 14px;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid purple;
+      display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; /* Ensures space between elements */
+
+}  
+   #fav, #st, #lg {
+   flex-grow:1;
+     align-items:center;
+   display:flex;
+    position: absolute; 
+     
+   }
+
+#lg {
+left: 20px;
+      top: 10px;
+}
+
+#fav {
+  left: 30px;
+      top: 5px;
+}
+
+
+#st {
+  left: 10px;
+      top: 15px;
+}
+
+
+.lang-drop {
+ display: show; /* Initially hidden */
+position: absolute;
+  background-color: #ffffff;
+  width: 190px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 50px;
+  top: 1px;
+  right: 0
+}
+
+/* Style for dropdown content options */
+.lang-drop select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  background: #f9f9f9;
+  border-radius: 50px;
+}
+
+.lang-drop select option {
+  padding: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hover effect for the dropdown */
+.lang:hover .lang-drop {
+  display: block; /* Show dropdown when hovering */
+}
+
+/* Optional: Styling the language button on hover */
+.lang:hover {
+  background-color: #e1e1e1;
+}
+
+/*.lang-drop {
+  display: none; /* Initially hidden */
+/*  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.lang:hover .lang-drop {
+  display: block; /* Show dropdown on hover */
+}
+
+
+
+
+
+
+
+
+
+
+/*.lang, .menuOne {
+  padding: 10px 110px;
+}*/
+
+
+
+
+/*#dark-mode-toggle {
+  padding:  2px 70px;
+  border-radius: 20px;
+  background-color: peachpuff;
+  width: 260px;
+  border: none;*/
+}
+
+
+
+
+html, body {
+  height: 100%; /* Ensure html and body fill the viewport */
+  margin: 0;    /* Remove default margin */
+  padding: 0;   /* Remove default padding */
+  width: 100%;
+  font-size: 32%;
+}
+
+
+#scr {
+  color: purple;
+  position: absolute;
+  top: 2.8em;
+  font-size: 0.8em;
+  font-weight: 700;
+  font-family: 'signika' , sans-serif;
+
+}
+ #scr a {
+   color: coral;
+   text-decoration: none;
+ }
+#scr a:hover {
+  color: purple;
+}
+
+    .home-container{
+        
+       /*display: flex; /* Allows the buttons to be aligned in a row */
+    overflow-y: scroll; /* Makes the container scrollable horizontally */
+    /*white-space: none; /* Prevents buttons from wrapping to the next line */
+    height: 100%; /* Set the width of the container */
+    position: fixed; /* Keeps the position context for the buttons */
+ width: 100%;
+     background-color: white;
+        top: 10%;
+      
+    }   
+        
+
+
+
+
+
+ .bottom {
+   display: flex; /* Allows the buttons to be aligned in a row */
+ /*   overflow-x: auto; /* Makes the container scrollable horizontally */
+    white-space: nowrap; /* Prevents buttons from wrapping to the next line */
+    width: 100%; /* Set the width of the container */
+    position: relative; /* Keeps the position context for the buttons */
+   /* background-color: whitesmoke;*/
+   position: fixed;
+   /*top: 86%;*/
+   left: 0px;
+   height: 9vh;
+ background-color: whitesmoke;
+   
+ }
+
+ .bottomNavs {
+   border: none;
+   border-bottom-color: purple;
+   border-radius: 20px;
+   margin-left: 4%;
+    height: 100%;
+   width: 20%;
+   font-size: 32%;
+   background-color: antiquewhite;
+   display: flex;
+   outline: none;
+ }
+ 
+
+
+
+ #wnd, #eve, #way {
+  font-size: 0.72rem;
+  margin-top: -18%;
+     font-family: 'signika' , sans-serif;
+margin-left: 50%;
+   text-decoration: none;
+   font-weight: 700;
+   color: black;
+}
+.bottomNavs a {
+  text-decoration: none;
+}
+
+
+
+
+span.ev, span.wDay, span.wEnd {
+  color: #000;
+  font-size: 10em;
+  margin-left: 38%;
+}
+
+/*span.ev:hover, span.wDay:hover, span.wEnd:hover {
+  background-color: darkgray;
+  border-radius: 10px;
+}*/
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.modal.fade .modal-dialog {
+  animation: fadeInUp 0.3s ease-in-out;
+
+}
+.modal-content {
+  z-index: 8888;
+ position: relative;
+}
+
+
+
+
+
