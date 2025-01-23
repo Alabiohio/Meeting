@@ -39,7 +39,7 @@
       "What is the website?": {
         text: "Visit the official website: <a href='https://www.jw.org' target='_blank'>www.jw.org</a>",
         image: null,
-        video: "/storage/emulated/0/PDF/JW/Files/Movies/lffv_E_001_r360P.mp4",
+        video: "Files/vid/load.mp4",
         music: null
       },
       "This week meeting?": {
