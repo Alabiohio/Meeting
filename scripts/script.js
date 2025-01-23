@@ -13,10 +13,9 @@ function checkInternetConnection() {
 
 // Function to hide the loading screen
 function hideLoadingScreen() {
-  loadingScreen.style.display = 'none';
-		boxF1.style.display = 'block';
-		boxF2.style.display = 'block';
-		boxF3.style.display = 'block';
+  setTimeout(() => {
+    loadingScreen.style.display = 'none';
+  }, 10000);
 }
 
 // Check internet connection every 2 seconds
