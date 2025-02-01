@@ -1,4 +1,3 @@
-
 /// Get the loading screen element
 const loadingText = document.getElementById('ldT');
 const loadingScreen = document.getElementById('loading-screen');
@@ -50,7 +49,6 @@ setInterval(() => {
 document.addEventListener('DOMContentLoaded', () => {
   showLoadingScreen();
 });
-
 //END OF LOADING FUNCTIONS
 
 
