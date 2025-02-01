@@ -1,54 +1,45 @@
 /// Get the loading screen element
+// Check if loading elements exist before running the script
 const loadingText = document.getElementById('ldT');
 const loadingScreen = document.getElementById('loading-screen');
 
-// Function to show the loading screen
-function showLoadingScreen() {
-  loadingScreen.style.display = 'flex';
-}
-// Function to check internet connection
-function checkInternetConnection() {
-  return navigator.onLine;
-}
+if (loadingScreen && loadingText) {
+  function showLoadingScreen() {
+    loadingScreen.style.display = 'flex';
+  }
 
-// Function to hide the loading screen
-function hideLoadingScreen() {
-  setTimeout(() => {
-    loadingScreen.style.display = 'none';
-  }, 7000);
-  
-	//	boxF1.style.display = 'block';
-		//boxF2.style.display = 'block';
-		//boxF3.style.display = 'block';
-}
+  function checkInternetConnection() {
+    return navigator.onLine;
+  }
 
-// Check internet connection every 2 seconds
-setInterval(() => {
+  function hideLoadingScreen() {
+    setTimeout(() => {
+      loadingScreen.style.display = 'none';
+    }, 7000);
+  }
+
+  setInterval(() => {
+    if (checkInternetConnection()) {
+      hideLoadingScreen();
+    } else {
+      loadingText.style.color = 'red';
+      loadingText.style.fontSize = '1rem';
+      loadingText.textContent = "Something went wrong!";
+      loadingText.classList.add('shakee');
+    }
+  }, 10000);
+
   if (checkInternetConnection()) {
     hideLoadingScreen();
-  }else {
-    loadingText.style.color= 'red';
-    loadingText.style.fontSize= '1rem';
-    loadingText.textContent= "Something went wrong!";
-  loadingText.classList.add('shakee');
+    loadingText.style.fontSize = '2rem';
+    loadingText.textContent = "AJIBODE";
+    loadingText.classList.add('show');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    showLoadingScreen();
+  });
 }
-}, 10000);
-
-// Hide the loading screen if the internet connection is already established
-
- if (checkInternetConnection()) {
-  hideLoadingScreen();
-  loadingText.style.fontSize= '2rem';
-  loadingText.textContent= "AJIBODE";
-  loadingText.classList.add('show');
-}
- 
-
-
-// Show the loading screen when the page loads
-document.addEventListener('DOMContentLoaded', () => {
-  showLoadingScreen();
-});
 //END OF LOADING FUNCTIONS
 
 
