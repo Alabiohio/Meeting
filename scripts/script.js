@@ -1,4 +1,4 @@
-/*
+
 /// Get the loading screen element
 const loadingText = document.getElementById('ldT');
 const loadingScreen = document.getElementById('loading-screen');
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //END OF LOADING FUNCTIONS
 
-*/
+
 
 // Function to toggle the main menu visibility
 function toggleMenu() {
