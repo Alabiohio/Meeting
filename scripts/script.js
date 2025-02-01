@@ -96,7 +96,7 @@ const hc = document.getElementById('hc');
         menu.classList.add('active');
         menuButton.classList.add('rotate');
         menuButtonIcon.textContent = 'close';
-        document.body.classList.add('disable-interactions');
+        // document.body.classList.add('disable-interactions');
           hc.style.overflow='auto';
     overlay.style.display='block';
 }
