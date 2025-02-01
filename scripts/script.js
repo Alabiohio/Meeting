@@ -70,7 +70,7 @@ const hc = document.getElementById('hc');
         menu.classList.remove('active');
         menuButton.classList.remove('rotate');
         menuButtonIcon.textContent = 'lists';
-        document.body.classList.remove('disable-interactions');
+        //document.body.classList.remove('disable-interactions');
         resetSubmenus(); // Reset all submenus
         overlay.style.display='none';
     } else {
@@ -79,7 +79,7 @@ const hc = document.getElementById('hc');
         menu.classList.add('active');
         menuButton.classList.add('rotate');
         menuButtonIcon.textContent = 'close';
-        document.body.classList.add('disable-interactions');
+        //document.body.classList.add('disable-interactions');
           hc.style.overflow='auto';
         overlay.style.display='block';
      }
@@ -95,7 +95,7 @@ const hc = document.getElementById('hc');
         menu.classList.add('active');
         menuButton.classList.add('rotate');
         menuButtonIcon.textContent = 'close';
-        document.body.classList.add('disable-interactions');
+       // document.body.classList.add('disable-interactions');
           hc.style.overflow='auto';
     overlay.style.display='block';
 }
