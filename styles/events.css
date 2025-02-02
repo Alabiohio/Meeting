@@ -1,0 +1,50 @@
+
+  
+.evtMonth {
+  margin-left: 5%;
+  font-weight: 800;
+  font-family: 'signika' , sans-serif;
+}
+
+
+.card:hover {
+  background-color: lightgrey;
+}
+.dark-mode .card {
+  background-color: rgb(87, 87, 87);
+}
+.dark-mode .card:hover {
+  background-color: rgb(107, 107 ,107);
+}
+
+.card-title.evtNames {
+  font-weight: 800;
+  font-family: 'signika' , sans-serif;
+  color: darkslategrey;
+}
+.dark-mode .card-title.evtNames {
+  color: whitesmoke
+}
+
+.card-title.evtThemes {
+  color: palevioletred;
+  font-weight: 700;
+  font-family: 'signika' , sans-serif;
+}
+
+.card-text.evtDateTime {
+  font-weight: 500;
+  font-family: 'signika' , sans-serif;
+}
+.evtLocation {
+  font-weight: 500;
+  font-family: 'signika' , sans-serif;
+}
+span.evtLocIc {
+  color: palevioletred;
+}
+.dark-mode .card-text {
+  color: whitesmoke;
+}
+
+
