@@ -1,0 +1,47 @@
+{
+    "month": "MARCH"
+    "isFiveWeeks": false,
+    "wkndDate": {
+        "wkdDate1": "Sunday 5",
+        "wkdDate2": "Sunday 12",
+        "wkdDate3": "Sunday 19",
+        "wkdDate4": "Sunday 26"
+    },
+    "openSong": {
+        "wkdSng1": "Song 5",
+        "wkdSng2": "Song 70",
+        "wkdSng3": "Song 23",
+        "wkdSng4": "Song 6"
+    },
+    "chairman": {
+        "chMan1": "Bro Taye Ekunode",
+        "chMan2": "Bro Blessing Mark",
+        "chMan3": "Bro Daniel Uzor",
+        "chMan4": "Bro Kayode Olakojo"
+    },
+    "speaker": {
+        "spk1": "Bro Ugochukwu Onyekwe",
+        "spk2": "Bro Calvin Uzor",
+        "spk3": "Bro Toyin Gabielesin",
+        "spk4": "Bro Taye Ekunode"
+    },
+    "publicTalk": {
+        "pTalk1": "Unavailable",
+        "pTalk2": "Unavailable",
+        "pTalk3": "Unavailable",
+        "pTalk4": "Unavailable"
+    },
+    "watchTwr": {
+        "reader1": "Bro Jeremiah Ofedili",
+        "reader2": "Bro Oiseomoede Alabi",
+        "reader3": "Bro Calvin Uzor",
+        "reader4": "Bro Ohiocheoya Alabi"
+    },
+    "study": {
+        "study1": "Loading...",
+        "study2": "How Cope With Injustice",
+        "study3": "Learn From the Parting Words of Faithful Men",
+        "study4": "Brothers-Are You Reaching Out To Be a Ministerial Servant"
+
+    }
+}
